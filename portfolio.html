@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <title>Ishan's Portfolio Page</title>
+    <link rel="stylesheet" href="stylingPort.css">
+    <script src="scriptPort.js"></script>
+</html>
+<body>
+    <div id="Panel" style="background-color: #1F487E;">
+        <div class="quick-info">
+            <header>Ishan Sathe</header>
+            <div class="pngs">
+                <img src="portfolio_img/phone.png" class="logos" /> 9969577938
+            </div>
+            <div class="pngs">
+                <img src="portfolio_img/envelope.png" class="logos"/> ishansatheprofessional@gmail.com
+            </div>
+        </div>
+        <div id="space"></div>
+        <div id="navigation">
+            <div class="navigation-links">
+                <a href="#about-me"><button>About Me</button></a>
+            </div>
+            
+            <div class="navigation-links">
+                <a href="#skills"><button>Skills</button></a>
+            </div>
+
+            <div class="navigation-links">
+                <a href="#project"><button>Projects</button></a>
+            </div>
+            
+            <div class="navigation-links">
+                <a href="#recommendation"><button>Recommendations</button></a>
+            </div>
+
+            <div class="navigation-links">
+                <a href="#leave-recom"><button>Appraise</button></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="about-me" style="background-color: #E5F4E3;">
+        <div class="more-info">
+            <img src="portfolio_img/cropped_pic.jpg" id="self-image" />
+        </div>
+        <section class="more-info" id="text-info">
+            <header><h1>Hello, My name is Ishan.</h1></header>
+            <p>
+                <strong>My goal is to achieve excellence.</strong><br>
+                
+                Being a Master's student at KJ Somaiya College of Engineering, I am currently pursuing a degree in Information Security.
+                As part of my curriculum, I am also doing an internship at IIT Bombay, for research in the domain of Security Operations Center (SOC).
+                <br>
+                Being fairly experienced in the Blockchain domain, my MTech thesis is on assessing Smart Contract Vulnerabilities. 
+                At IIT-B, I have been assigned the management over the project 'Summer of Code' -- the aim being to build a plug and play
+                SOC.  
+            </p>
+        </section>
+    </div>
+
+    <section id="skills" style="background-color: #E5F4E3;">
+        <header><h2>Skills</h2></header>
+        <div id="all-skills">
+            <div class="skill-info">
+                <img src="portfolio_img/html5.png" alt="">
+                <p>HTML</p>
+            </div>
+            <div class="skill-info">
+                <img src="portfolio_img/css-logo.png" alt="https://cdn.pixabay.com/photo/2016/11/19/23/00/css3-1841590_1280.png">
+                <p>CSS</p>
+            </div>
+            <div class="skill-info">
+                <img src="portfolio_img/js.jpeg" alt="">
+                <p>JavaScript</p>
+            </div>
+            <div class="skill-info">
+                <img src="portfolio_img/go-logo.png" alt="">
+                <p>GoLang</p>
+            </div>
+            <div class="skill-info">
+                <img src="portfolio_img/python-logo.png" alt="">
+                <p>Python</p>
+            </div>
+            <div class="skill-info">
+                <img src="portfolio_img/node.png" alt="">
+                <p>NodeJs</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="project" style="background-color: #E5F4E3;">
+        <header><h1>Projects</h1></header>
+        <div id="projects">
+            <div class="proj-info">
+                <h3>Python Blockchain</h3>
+                <ul>
+                    <li>A replica of the Bitcoin Blockchain using Python programming language. Network model not included</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="proj-info">
+                <h3>This Portfolio</h3>
+                <ul>
+                    <li>Used the course booklet as reference. But used my own imagination and changed certain elements and styles
+                        as well
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <div class="proj-info">
+                <h3>DeFi Swap Profit Reporter/Indicator/Predictor</h3>
+                <ul>
+                    <li>Coming Soon.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="recommendation" style="background-color: #E5F4E3 ;">
+        <h1>Recommendations</h1>
+        <div style="clear:both;"></div>
+        <div id="all-recom">
+            <div class="recom">
+                <span>&#8220;</span>
+                He is a candidate worth 30,000 for the internship.
+                <span>&#8221;</span>
+            </div>
+            <div class="recom">
+                <span>&#8220;</span>
+                You would be a good influence on him
+                <span>&#8221;</span>
+            </div>
+            <div class="recom">
+                <span>&#8220;</span>
+                He teaches Karate very well
+                <span>&#8221;</span>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="leave-recom" style="background-color: #E5F4E3 ;">
+        <h1>Appraise</h1>
+        <div style="clear:both;"></div>
+        <div>
+            <fieldset>
+                <legend>Leave a Recommendation</legend>
+
+                <input type="text" placeholder="Name (Optional)" id="_name"> <br>
+                <textarea id="new-recom" cols="100" rows="10" placeholder="Message"></textarea>
+
+                <button id="recom-btn" onclick="addRecom()">Add</button>
+            </fieldset>
+            
+        </div>
+    </section>
+
+
+    <div id="homeShrt">
+        <a href="#Panel">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+        </a>
+    </div>
+
+    <div id="pop-up">
+        <img src="portfolio_img/checkmark--outline.svg"/>
+        <h3>Thanks for leaving a recommendation!</h3>
+        <button onclick="showPopup(false)">Ok</button>
+    </div>
+</body>
