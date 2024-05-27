@@ -1,0 +1,280 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #69DDFF;
+    margin: 2cm;
+}
+
+
+/* ---------------------------------Panel Area Begins------------------------------------------------------------------------ */
+#Panel{
+    color: #b3dae6;
+    display: flex;
+
+
+}
+
+.quick-info{
+    padding-left: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 6px;
+    width: 500px;
+
+}
+
+#space{
+    width: 600px;
+}
+
+header{
+    font-size: 22px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.logos{
+    /* padding-top: 5px; */
+    padding-left:5px;
+    margin-bottom: -4px;
+    width: 23px; 
+    height: 23px;
+}
+
+#navigation{
+    width: 500px;   
+    /* padding: 20px; */
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    /* background-color: white; */
+}
+.navigation-links{
+    flex-direction: column;
+    background-color: #042857;
+    /* border: 1px solid rgb(144, 23, 144); */
+}
+
+button{
+    margin: 15px;
+    border: #1F487E 2px solid;
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    font-family: cursive;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #30c3f0;
+    /* flex-direction: row; */
+    /* align-items: center; */
+}
+
+button:hover{
+    text-decoration: underline;
+}
+
+
+/* ----------------------------------------------- Panel Area Ends -------------------------------------------------------------- */
+
+#about-me{
+    height: 500px;
+    display: flex;
+}
+
+#text-info{
+    margin-left: 10px;
+}
+
+#self-image{
+    padding: 70px;
+    width: 350px;
+    height: 350px;
+}
+
+.more-info h1{
+    margin-top: 80px;
+    font-size: 65px;
+    color: purple;
+}
+
+.more-info p{
+    margin-top: -30px;
+    font-size: 25px;
+    color: grey;
+    margin-right: 20px;
+}
+
+/* --------------------------------------------About Me are ends ---------------------------------------------------------------- */
+#skills{
+    padding-left: 2cm;
+}
+#skills h2{
+    font-size: 50px;
+    color: purple;
+}
+
+#all-skills{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.skill-info{
+    text-align: center;
+    width: 2in;
+    padding: 20px;
+    border: 1px solid grey;
+    border-radius: 6px;
+    
+    margin: 50px;
+    margin-top: 0px;
+    display: block;
+    box-shadow: 30px 10px grey;
+    
+}
+
+.skill-info img{
+    height: 100px;
+    width: 100px;
+    align-items: center;
+}
+
+
+/* --------------------------------------------------Project Info Begins ---------------------------------------------------- */
+#project{
+    padding-left: 2cm;
+    padding-right: 2cm;
+}
+
+#project h1{
+    font-size: 50px;
+    color: purple;
+}
+
+.proj-info{
+    padding-top: 1cm;
+    margin-left: 50px;
+    padding-bottom: 1cm;
+}
+
+#projects hr{
+    border: 1px solid lightgrey;
+    /* margin-left: 4cm; */
+    margin-right: 5cm;
+}
+
+
+
+/* ---------------------------------------------------Recommendations begin --------------------------------------------------- */
+#recommendation{
+    padding-left: 2cm;
+}
+
+#recommendation h1{
+    font-size: 50px;
+    color: purple;
+}
+
+#all-recom{
+    display: flex;
+    /* justify-content:  center; */
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.recom{
+    font-style: italic;
+    text-align: left;
+    width: 21.875rem;
+    background-color: white;
+    padding: 20px;
+    border-radius: 11px;
+    margin: 10px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* -------------------------------------------------Leave recommendation section begins ------------------------------------- */
+
+#leave-recom{
+    padding: 0 2cm 0 2cm;
+}
+
+#leave-recom h1{
+    font-size: 50px;
+    color: purple;
+}
+
+#leave-recom legend{
+    font-size: 30px;
+    color: purple;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content:center;
+    margin-left: 50px; 
+    margin-right: 50px;
+    border: thin solid white;
+}
+
+#recom-btn{
+    align-self: center;
+    width: 100px;
+    color: purple;
+    background-color: white;
+    border: 1px solid purple;
+    border-radius: 11px;
+}
+
+#recom-btn:hover{
+    color: white;
+    background-color: purple;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+
+#pop-up {
+    width:400px;
+    background-color: #e8bcf0;
+    border-radius: 3mm;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    position: fixed;
+    padding: 30px;
+    visibility: visible;
+    /* change to hidden, kept visible for testing */
+}
+
+#pop-up img {
+    padding-top: 20px;
+}
+
+#pop-up button {
+    background-color: #fff;
+    border: 1px solid #7600bc;
+    color: #7600bc;
+    display: block;
+    border-radius: 6px;
+    align-self: center;
+    margin: 50px;
+    padding: 10px;
+    width: 2in;
+    font-size: 20px;
+    margin-left: 25%;
+}
+
+#pop-up button:hover {
+    background-color: #fff;
+    border: 2px solid #7600bc;
+    color: #7600bc;
+    display: block;
+    font-weight: bolder;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 25%;
+}
